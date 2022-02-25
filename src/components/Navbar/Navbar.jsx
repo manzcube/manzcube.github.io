@@ -11,13 +11,15 @@ import { Nav, NavLink, Bars, NavMenu } from './NavbarElements'
                 </NavLink>
                 <Bars />
                 <NavMenu>
-                    <NavLink to='/about' activeStyle>about</NavLink>
-                    <NavLink to='/contactme' activeStyle>contact me</NavLink>
-                    <NavLink to='/projects' activeStyle>projects</NavLink>
+                    <NavLink to='/' activeStyle className='text-decoration-none'>Home</NavLink>
+                    <NavLink to='/about' activeStyle className='text-decoration-none'>About Me</NavLink>
+                    <NavLink to='/projects' activeStyle className='text-decoration-none'>Projects</NavLink>
+                    <NavLink to='/contactme' activeStyle className='text-decoration-none'>Contact Me</NavLink>
                 </NavMenu>
             </Nav>
         </React.Fragment>    
     )
 }
 
-export default Navbar;
+export default Navbar
+
