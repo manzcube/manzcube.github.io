@@ -1,12 +1,11 @@
 
 .page {
     color: white;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: top;
-    height: 100vh;
     background-color: #1d1d1d;
-    overflow: auto !important;
 }
 
 .card {

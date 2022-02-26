@@ -1,26 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Pages.css';
-import Project from '../components/Project';
+import ProjectItem from '../components/ProjectItem';
+const projects_list = require('../seeds/ProjectsList')
 
 
 
-const Projects = ({ label }) => {
-  const project_list = [{name: 'dgsad'}, {name: 'tu mamam'}, {name: 'agfadg'}, {name: 'klkk'}, {name: 'marh'}, {name: 'elfo'}]
+const Projects = () => {
 
-  const renderedProjects = project_list.map((project) => {
+  const renderedProjects = projects_list.map((project) => {
       return (
-        <div className='card'>
-          <Project title={project.name} />
-        </div>
+        <ProjectItem 
+        name={project.name} 
+        description={project.description}
+        picture={project.picture}
+        url={project.url}
+        />
       )
     }
   )
 
 
   return (
-    <div className='page flex-column align-items-center justify-content-start p-5'>
-      <h1 className='fw-bold mb-5'>Projects {label}</h1>
-        {renderedProjects}
+    <div className='page flex-column align-items-center justify-content-center p-5'>
+      <h1 className='fw-bold mb-5'>My Projects</h1>
+        <div className="container-fluid d-flex justify-content-center mt-5">
+          <div className="row w-75">
+            {renderedProjects}
+          </div>
+        </div>
     </div>
   )
 }

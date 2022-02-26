@@ -3,7 +3,7 @@ import './Pages.css';
 
 const Home = () => {
   return (
-    <div className='page'>
+    <div className='page'  style={{height: '100vh'}}>
       <div className="row w-100">
         <div className="col-lg-6 d-flex justify-content-center align-items-center p-5">
           <span class="animate__animated animate__bounceInLeft d-flex justify-content-end px-4">
@@ -11,6 +11,7 @@ const Home = () => {
               <h3>Hi!, I'm</h3>
               <h1 className='fw-bold'>Marc Alzamora</h1>
               <h2>FullStack Developer</h2>
+              <a href="../files/Resume-Marc-Alzamora.pdf" download className='btn btn-light my-2'>Download Resume</a>
             </div>              
             <img src={require('../img/picme.webp')} alt='pic' className='img-fluid' style={{ maxWidth: '300px', maxHeight: '300px' }} />
           </span>

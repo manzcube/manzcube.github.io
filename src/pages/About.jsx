@@ -21,7 +21,7 @@ const About = () => {
             </div>
           </div>
           <div className="col-6 d-flex justify-content-start align-items-start">
-            <img src={require('../img/m.png')} alt="me" className='img-fluid' style={{ maxHeight: '70%' }} />
+            <img src={require('../img/ee.png')} alt="me" className='img-fluid' style={{ maxHeight: '70ch' }} />
           </div>
           <div>
             
