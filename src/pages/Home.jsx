@@ -12,6 +12,11 @@ const Home = () => {
               <h1 className='fw-bold'>Marc Alzamora</h1>
               <h2>FullStack Developer</h2>
               <a href="../files/Resume-Marc-Alzamora.pdf" download className='btn btn-light my-2'>Download Resume</a>
+              <br />
+
+              <a href="linkedin/in/marc-alzamora"><i class="bi bi-linkedin m-2"></i></a>
+              <a href="github.com/manzcube"><i class="bi bi-github m-2"></i></a>
+              
             </div>              
             <img src={require('../img/picme.webp')} alt='pic' className='img-fluid' style={{ maxWidth: '300px', maxHeight: '300px' }} />
           </span>
@@ -31,6 +36,7 @@ const Home = () => {
             </div>
           </span>
         </div>
+        {/* // make somehting with rubiks cuebs so I show my skills percentage */}
 
        
       </div>
