@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Pages.css';
 import ProjectItem from '../components/ProjectItem';
 const projects_list = require('../seeds/ProjectsList')
@@ -7,9 +7,10 @@ const projects_list = require('../seeds/ProjectsList')
 
 const Projects = () => {
 
-  const renderedProjects = projects_list.map((project) => {
+  const renderedProjects = projects_list.map((project, index) => {
       return (
         <ProjectItem 
+        key={index}
         name={project.name} 
         description={project.description}
         picture={project.picture}
@@ -21,13 +22,21 @@ const Projects = () => {
 
 
   return (
-    <div className='page flex-column align-items-center justify-content-center p-5'>
-      <h1 className='fw-bold mb-5'>My Projects</h1>
-        <div className="container-fluid d-flex justify-content-center mt-5">
-          <div className="row w-75">
+    <div className='page'>
+      <div className="container-fluid overflow-auto">
+        <div className="row text-center">
+          <h1 className='fw-bold mb-5 my-5'>My Projects</h1>      
             {renderedProjects}
-          </div>
-        </div>
+          <a 
+          href="https://www.github.com/manzcube" 
+          target='_blank' 
+          rel='noreferrer' 
+          className='d-flex align-items-center my-5 row'>
+            Check out the rest on my GitHub
+            <i className="bi bi-github m-2"></i>                
+          </a>
+        </div>  
+      </div>  
     </div>
   )
 }

@@ -1,7 +1,7 @@
 import './App.css'
 
 import React from "react";
-import Navbar from "./Navbar/Navbar";
+import NavBar from "./Navbar/NavBar";
 import Home from "../pages/Home";
 import About from "../pages/About";
 import ContactMe from "../pages/ContactMe";
@@ -15,7 +15,7 @@ const App = () => {
 
     return (
         <Router className="App">
-            <Navbar />
+            <NavBar />
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/about' element={<About />} />

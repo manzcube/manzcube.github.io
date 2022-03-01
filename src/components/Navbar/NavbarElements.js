@@ -31,7 +31,7 @@ z-index: 10;
     color: white;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     display: none;
 }
 `
@@ -40,17 +40,15 @@ export const Bars = styled(FaBars)`
 display: none;
 color: white;
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     display: block;
     position: absolute;
     top: 0;
     right: 0;
     transform: translate(-100%, 75%);
     font-size: 1.8rem;
-    cursor: pointer;
 }
 `
-
 
 
 

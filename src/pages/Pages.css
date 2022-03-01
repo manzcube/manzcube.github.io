@@ -1,20 +1,42 @@
 
 .page {
     color: white;
+    display: flex;
     height: 100%;
+    background-color: #1d1d1d;
+}
+
+.row {
+    margin: 10ch auto;
     display: flex;
     justify-content: center;
-    align-items: top;
-    background-color: #1d1d1d;
 }
 
 .card {
     color: white;
     background-color: #2d2d30;
-    max-width: 600px;
-    max-height: 700px;
     line-height: 2em;
 }
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    height: 45ch;
+    width: 45ch; 
+}
+
+.project-card .card-img-top {
+    height: 50%; 
+    object-fit: cover;
+}
+
+.form {
+    width: 50ch;
+}
+
+
 
 .bi-linkedin {
     color: #0e76a8;

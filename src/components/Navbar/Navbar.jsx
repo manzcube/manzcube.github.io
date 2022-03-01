@@ -1,25 +1,36 @@
-import React from "react";
-import './Navbar.css'
-import { Nav, NavLink, Bars, NavMenu } from './NavbarElements'
+import React, { useState } from "react";
+import './NavBar.css';
+import { NavLink, Nav, NavMenu, Bars } from './NavbarElements';
 
- const Navbar = () => {
+
+ const NavBar = () => {
+    const [toggle, setToggle ] = useState(false)
+
     return (
         <React.Fragment>
-            <Nav className="px-5">
+            <Nav className="px-5 flex">
                 <NavLink to='/'>
                     <img src="https://icon-library.com/images/m-icon/m-icon-7.jpg" alt="icon" style={{ width: '50px', height: '50px' }} />
                 </NavLink>
-                <Bars />
+                <Bars type="button" onClick={() => { setToggle(!toggle) }} />               
+                
                 <NavMenu>
                     <NavLink to='/' activeStyle className='text-decoration-none'>Home</NavLink>
                     <NavLink to='/about' activeStyle className='text-decoration-none'>About Me</NavLink>
                     <NavLink to='/projects' activeStyle className='text-decoration-none'>Projects</NavLink>
                     <NavLink to='/contactme' activeStyle className='text-decoration-none'>Contact Me</NavLink>
-                </NavMenu>
+                </NavMenu>      
             </Nav>
-        </React.Fragment>    
+            <div className="container-fluid flex-column align-items-center toggledNavbar text-white" style={{ display: `${toggle ? 'flex' : 'none'}` }}>
+                <a href='/' activeStyle className='text-decoration-none'>Home</a>
+                <a href='/about' activeStyle className='text-decoration-none'>About Me</a>
+                <a href='/projects' activeStyle className='text-decoration-none'>Projects</a>
+                <a href='/contactme' activeStyle className='text-decoration-none'>Contact Me</a>                
+            </div>
+        </React.Fragment> 
     )
+          
 }
 
-export default Navbar
+export default NavBar;
 

@@ -1,3 +1,23 @@
 * {
     font-family: 'Montserrat', sans-serif;
 }
+
+.toggledNavbar {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2d2d30;
+    line-height: 6ch;
+}
+
+.toggledNavbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.toggledNavbar a:hover {
+    color: white;
+    text-decoration: underline !important;
+}
