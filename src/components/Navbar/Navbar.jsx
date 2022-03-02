@@ -12,7 +12,7 @@ import { NavLink, Nav, NavMenu, Bars } from './NavbarElements';
                 <NavLink to='/'>
                     <img src="https://icon-library.com/images/m-icon/m-icon-7.jpg" alt="icon" style={{ width: '50px', height: '50px' }} />
                 </NavLink>
-                <Bars type="button" onClick={() => { setToggle(!toggle) }} />               
+                <Bars type="button" onClick={() => { setToggle(!toggle) }} className='my-auto' />               
                 
                 <NavMenu>
                     <NavLink to='/' activeStyle className='text-decoration-none'>Home</NavLink>

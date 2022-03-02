@@ -38,11 +38,11 @@
 }
 
 @keyframes bootsload { 0% { width: 0 } 100% { width: 85% }}
-@keyframes exload { 0% { width: 0 } 100% { width: 70% }}
-@keyframes nodeload { 0% { width: 0 } 100% { width: 30% }}
-@keyframes mongoload { 0% { width: 0 } 100% { width: 18% }}
-@keyframes reactload { 0% { width: 0 } 100% { width: 90% }}
-@keyframes jsload { 0% { width: 0 } 100% { width: 50% }}
+@keyframes exload { 0% { width: 0 } 100% { width: 45% }}
+@keyframes nodeload { 0% { width: 0 } 100% { width: 65% }}
+@keyframes mongoload { 0% { width: 0 } 100% { width: 55% }}
+@keyframes reactload { 0% { width: 0 } 100% { width: 65% }}
+@keyframes jsload { 0% { width: 0 } 100% { width: 75% }}
 
 .colored {
     font-size: 4ch;

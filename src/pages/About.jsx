@@ -25,10 +25,10 @@ const About = () => {
             <img src={require('../img/ee.png')} alt="me" className='img-fluid' style={{ maxHeight: '70ch' }} />
           </div>
         </div>
-        <div className="row">
+        {/* <div className="row">
         <h1 className='fw-bold text-center my-5'>Hobbies</h1>
         reading & cuebs
-        </div>
+        </div> */}
       </div> 
     </div>
   )

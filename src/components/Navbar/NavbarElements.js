@@ -42,11 +42,8 @@ color: white;
 
 @media screen and (max-width: 992px) {
     display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 75%);
-    font-size: 1.8rem;
+    font-size: 3ch;
+
 }
 `
 
