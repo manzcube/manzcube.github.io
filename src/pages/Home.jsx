@@ -38,19 +38,3 @@ const Home = () => {
 
 export default Home;
 
-
-
-// import FullStack from 'Developer';
-
-// class Marc extends Person {
-//     constructor(props) {
-//         super(props);
-//         this._age = 20;
-//         this._stack = 'MERN';
-//         this._hobbies = 'rubiks cube' && 'padel';
-//     }
-// }
-
-
-
-// console.log(FullStack, Marc)
