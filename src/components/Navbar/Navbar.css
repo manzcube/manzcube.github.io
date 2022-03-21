@@ -2,21 +2,19 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.toggledNavbar {
+.NavMenu {    
     width: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    background-color: #2d2d30;
-    line-height: 6ch;
+    justify-content: center;
 }
-
-.toggledNavbar a {
+.NavLink {
     color: white;
     text-decoration: none;
 }
 
-.toggledNavbar a:hover {
-    color: white;
+.NavLink:hover {
     text-decoration: underline !important;
+    color: white;
 }
+
