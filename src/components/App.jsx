@@ -1,7 +1,7 @@
 import './App.css'
 
 import React from "react";
-import NavBar from "./Navbar/NavBar";
+import NavBar from "./Navbar/Navbar";
 import Home from "../pages/Home";
 import About from "../pages/About";
 import ContactMe from "../pages/ContactMe";
