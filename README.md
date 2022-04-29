@@ -1,1 +1,1 @@
-Only React portfolio, hosting with gh-pages.
+Simple and low-features portfolio, made only with React, and hosting with gh-pages.
