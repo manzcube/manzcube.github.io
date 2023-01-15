@@ -9,7 +9,7 @@
 </head>
 <body class="bg-gray-100">
     <div class="w-full flex flex-col items-center">
-        <div class="grid grid-cols-2 mt-20">
+        <div class="md:grid md:grid-cols-2 flex flex-col items-center mt-20">
             <div class="flex justify-end">
                 <img class="flex h-64 rounded-sm" src="./resources/58323d70-3b75-4a22-a29a-ffb3acb89f22.jpg" alt="">
             </div>
@@ -17,7 +17,7 @@
                 <h3 class="font-bold">MARC ALZAMORA</h3>
                 <span class="font-bold">Software Developer</span>
                 <span class="flex">
-                    <a href="./resources/Resume.pdf" download class='mr-2 py-1 px-2 border border-black rounded-md active:scale-95'>Resume</a>
+                    <a href="./resources/Resume.pdf" download class='mr-2 py-1 px-2 bg-white rounded-md active:scale-95'>Resume</a>
                     <a href="https://www.linkedin.com/in/marc-alzamora" target='_blank' rel='noreferrer' class="flex items-center mr-2 py-1 px-2 rounded-md text-white bg-sky-500 active:scale-95">
                         LinkedIn
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
@@ -32,30 +32,89 @@
                       </a>                
                 </span>
                 <span>
-                    <p class="font-bold">Description:</p> I would describe 
-                    myself as an inquisitive, problem-solver, and organized person
-                    who loves coding and Rubik's cube! Currently seeking a positon in Europe where to relocate.
+                    <p class="font-bold">Description:</p> 
+                    I would describe myself as an inquisitive, problem-solver, and 
+                    organized person who loves coding and Rubik's cube! Currently 
+                    seeking a position in Europe where to relocate.
                 </span>
             </div>
         </div>
-        <div class="grid grid-cols-2 space-x-20">
+        <div class="grid grid-cols-2 md:space-x-20">
             <div class="w-full mt-20 flex flex-col items-center">
                 <h2 class="font-bold">Skills</h2>
                 <ul>
                     <li>- Discipline</li>
                     <li>- Goal-oriented</li>
+                    <li>- Time management</li>
+                    <li>- Mathematical background</li>
+                    <li>- Learning strategies</li>
                 </ul>
             </div>
             <div class="w-full mt-20 flex flex-col items-center">
                 <h2 class="font-bold">Tech</h2>
                 <ul>
                     <li>- React</li>
+                    <li>- JavaScript</li>
                     <li>- ExpressJS</li>
+                    <li>- Node</li>
+                    <li>- MongoDB</li>
+                    <li>- HTML/CSS</li>
+                    <li>- Firebase Cloud</li>
+                    <li>- Tailwindcss</li>
+                    <li>- Bootstrap</li>
+                    <li>- Python</li>
                 </ul>
             </div>
         </div>
-        <div class="w-full mt-20 px-44 flex justify-center">
-            <h2 class="font-bold">Projects</h2>
+        <div class="w-full mt-20 xl:px-44 flex flex-col items-center">
+            <h2 class="font-bold mb-10">Projects</h2>
+            <div class="flex-col md:flex-row md:flex mb-20 items-center">
+                <img src="https://user-images.githubusercontent.com/88792194/211307622-c143e32c-084d-4145-8982-c06fe799d760.png" alt="" class="flex h-44">
+                <div class="p-5 max-w-md">
+                    <h3 class="font-bold">Trading Blog</h3>
+                    <p>
+                        React + Firebase. Consuming Auth, Firestore and Storage services from Firebase. Tailwind as CSS framework. The user can sign in/out,
+                        write message in the chat, and crud operations with posts and comments. Bookmarked system and some 3rd party api for news retrievemnt.
+                    </p>
+                    <a href="https://github.com/manzcube/Trading-blog" target="_blank" rel="noreferrer" class="flex mt-2 items-center text-purple-500 hover:underline">
+                        Check the code on github
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="flex-col md:flex-row md:flex mb-20 items-center">
+                <img src="https://user-images.githubusercontent.com/88792194/152976693-abe2e695-2ffb-4300-96ff-c9527bb31740.png" alt="" class="flex h-44">
+                <div class="p-5 max-w-md">
+                    <h3 class="font-bold">Campgrounds Ecommerce</h3>
+                    <p>FullStack application made with ExpressJS/Nodejs & MongoDB fot the backend. And EJS for the frontend.
+                        REST apis for creating, updating, reading and deleting camprounds, users and reviews.
+                        Consuming various 3rd party apis like mapbox, cloudinary, passport, etc.
+                    </p>
+                    <a href="https://github.com/manzcube/yelp-camp" target="_blank" rel="noreferrer" class="flex mt-2 items-center text-purple-500 hover:underline">
+                        Check the code on github
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="flex-col md:flex-row md:flex mb-20 items-center">
+                <img src="https://user-images.githubusercontent.com/88792194/154122715-a53f1fd4-9846-4e1e-9d2a-6cd9fe83fbc3.png" alt="" class="flex h-44">
+                <div class="p-5 max-w-md">
+                    <h3 class="font-bold">Youtube React API</h3>
+                    <p>React app, consuming google cloud youtube api, based on searchbar input.
+                        Using and creating custom Hooks.
+                    </p>
+                    <a href="https://github.com/manzcube/videos-react-app" target="_blank" rel="noreferrer" class="flex mt-2 items-center text-purple-500 hover:underline">
+                        Check the code on github
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
         </div>
         
     </div>
