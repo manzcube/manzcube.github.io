@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap');
+body {
+    font-family: 'Lora', sans-serif;
+    background: #000000;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+h2 {
+    font-size: 2ch;
+    font-weight: 200;
+}
+.icon {
+    width: 2ch;
+}
+
+.section1 {
+    max-width: 70%;
+    padding: 10ch;
+    gap: 5ch;
+    display: flex;
+    align-items: center;
+}
+
+#sk1, #tr1, #mido1, #yelp1 {
+    display: flex;
+}
+#sk2, #tr2, #mido2, #yelp2 {
+    display: none;
+}
+
+.name {
+    font-size: 4ch;
+}
+.title {
+    font-size: 3ch;
+}
+
+.section1 .btns a {
+    padding: 1ch;
+    margin-right:1ch;
+    font-size: 1.5ch;
+    border-radius: 5px;
+    background: white;
+    color: #000;
+    text-decoration: none;
+}
+
+.section1 img {
+    max-width: 40ch;
+}
+
+.section2 {
+    margin: 10ch auto;
+    display: flex;
+}
+
+.section2 .lists {
+    text-align: center;
+}
+
+.section2 .lists ul {
+    list-style: none;
+    text-align: start;
+}
+
+.section2 .lists ul li {
+    margin-top: 1ch;
+}
+
+.section3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.section3 .project {
+    gap: 4ch;
+    display: flex;
+    justify-content: center;
+    margin: 5ch auto;
+}
+
+.section3 .text {
+    padding: 2ch;
+    line-height: 2.5ch;
+    max-width: 30%;
+    font-size: 1.5ch;
+}
+
+.section3 a {
+    color: rgb(170, 99, 235);
+    display: flex;
+    gap: 0.5ch;
+}
+
+.section3 .project img {
+    width: 40%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.section3 .skualo:active #sk1 {
+    display: none;
+}
+
+.section3 .skualo:active #sk2 {
+    display: flex;
+}
+.section3 .workflow:active #mido1 {
+    display: none;
+}
+
+.section3 .workflow:active #mido2 {
+    display: flex;
+}
+.section3 .yelpcamp:active #yelp1 {
+    display: none;
+}
+
+.section3 .yelpcamp:active #yelp2 {
+    display: flex;
+}
+.section3 .trading:active #tr1 {
+    display: none;
+}
+
+.section3 .trading:active #tr2 {
+    display: flex;
+}
+
