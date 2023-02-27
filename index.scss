@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #202020;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+h2 {
+    font-size: 2ch;
+    font-weight: 200;
+}
+.icon {
+    width: 2ch;
+}
+
+.section1 {
+    max-width: 70%;
+    padding: 10ch;
+    gap: 5ch;
+    display: flex;
+    align-items: center;
+}
+
+.section2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20ch;
+}
+.section2 div div {
+    padding: 1ch 2ch;
+    background-color: #595858;
+    border-radius: 10px;
+}
+
+#sk1, #tr1, #mido1, #yelp1 {
+    display: flex;
+}
+#sk2, #tr2, #mido2, #yelp2 {
+    display: none;
+}
+
+.name {
+    font-size: 4ch;
+}
+.title {
+    font-size: 4ch;
+}
+.btns {
+    display: flex;
+}
+.section1 .btns a {
+    padding: 1ch;
+    margin-top: 1ch;
+    margin-right:1ch;
+    font-size: 1.5ch;
+    border-radius: 5px;
+    background: white;
+    color: #000;
+    text-decoration: none;
+}
+.description {
+    margin-top: 2ch;
+    max-width: 40ch;
+}
+
+.section1 img {
+    max-width: 30ch;
+}
+
+
+.section3 { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .project {
+        gap: 4ch;
+        display: flex;
+        justify-content: center;
+        margin: 5ch auto;
+    }
+    .text {
+        padding: 2ch;
+        line-height: 2.5ch;
+        width: 30%;
+        font-size: 1.5ch;
+    }
+    a {
+        color: rgb(170, 99, 235);
+        display: flex;
+        gap: 0.5ch;
+    }
+    img {
+        width: 40%;
+        object-fit: contain;
+        border-radius: 10px;
+    }
+}
+.section3 .skualo:active #sk1 {
+    display: none;
+}
+
+.section3 .skualo:active #sk2 {
+    display: flex;
+}
+.section3 .workflow:active #mido1 {
+    display: none;
+}
+
+.section3 .workflow:active #mido2 {
+    display: flex;
+}
+.section3 .yelpcamp:active #yelp1 {
+    display: none;
+}
+
+.section3 .yelpcamp:active #yelp2 {
+    display: flex;
+}
+.section3 .trading:active #tr1 {
+    display: none;
+}
+
+.section3 .trading:active #tr2 {
+    display: flex;
+}
+
+@media screen and (max-width: 1000px) {
+    .section1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btns {
+        flex-direction: column;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section3 {
+        img {
+            width: 100%;
+        }
+        .text {
+            width: 100%;
+        }
+    }
+}

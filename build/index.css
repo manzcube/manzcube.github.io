@@ -106,8 +106,7 @@ h2 {
 }
 .section3 img {
   width: 40%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   border-radius: 10px;
 }
 
@@ -165,4 +164,6 @@ h2 {
   .section3 .text {
     width: 100%;
   }
-}/*# sourceMappingURL=index.css.map */
+}
+
+/*# sourceMappingURL=index.css.map */
